@@ -5,5 +5,41 @@ body{
 
 th, td {
     padding: 15px;
-    border: 1px solid burlywood;
+    border: 1px solid rgb(112, 77, 31);
+  }
+ th{
+     background-color: rgb(112, 77, 31);
+ } 
+
+  .navigation_top nav{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0; 
+    background: rgb(112, 77, 31);
+    align-items: center;  
+    padding-left: 10px;  
+  }
+  .navigation_top ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0; 
+  }
+  .navigation_top h1 {
+    color: white;
+    display: block;
+  }
+  .navigation_top a {
+    text-decoration: none;
+    display: block;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    color: white;
+  }
+  .navigation_top a:hover {
+    background: rgb(103, 59, 1);
   }
