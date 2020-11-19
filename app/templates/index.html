@@ -1,15 +1,20 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>My Events list</h1>
-    {%for task in tasks%}
-    <div>
-        <p>
-            {{event.title }} : <b>{{task.description}}</b>
-            {% if task.done %}
-                <span> ✅ </span>
-            {% endif %}
-        </p>
-    </div>
-    {%endfor%}
+    <h1>My Events list</h1>    
+    <section>
+        <h4>Date</h4>
+        <h4>Event name</h4>
+        <h4>Number of guests</h4>
+        <h4>Room location</h4>
+        <h4>Description</h4>
+        {% for event in events %}
+        <!--  date, event_name, number_of_guests, room_location, description -->
+            <p>{{event.date }}</p>
+            <p>{{event.event_name }}</p>
+            <p>{{event.number_of_guests }}</p>
+            <p>{{event.room_location }}</p>
+            <p>{{event.description}}</p>    
+        {% endfor %}
+    </section>    
 {% endblock %}
