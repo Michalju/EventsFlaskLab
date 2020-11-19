@@ -2,19 +2,23 @@
 
 {% block content %}
     <h1>My Events list</h1>    
-    <section>
-        <h4>Date</h4>
-        <h4>Event name</h4>
-        <h4>Number of guests</h4>
-        <h4>Room location</h4>
-        <h4>Description</h4>
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Event name</th>
+            <th>Number of guests</th>
+            <th>Room location</th>
+            <th>Description</th>
+        </tr>
         {% for event in events %}
         <!--  date, event_name, number_of_guests, room_location, description -->
-            <p>{{event.date }}</p>
-            <p>{{event.event_name }}</p>
-            <p>{{event.number_of_guests }}</p>
-            <p>{{event.room_location }}</p>
-            <p>{{event.description}}</p>    
+        <tr>
+            <td>{{event.date }}</td>
+            <td>{{event.event_name }}</td>
+            <td>{{event.number_of_guests }}</td>
+            <td>{{event.room_location }}</td>
+            <td>{{event.description}}</td>
+        </tr>    
         {% endfor %}
-    </section>    
+    </table>    
 {% endblock %}
